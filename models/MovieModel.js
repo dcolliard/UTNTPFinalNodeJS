@@ -7,6 +7,5 @@ const MoviesSchema = new mongoose.Schema({
   durationMin: { type: Number, min: 1 }
 }, { timestamps: true })
 
-// Fuerza exactamente 'movies'
 const Movie = mongoose.model('Movie', MoviesSchema, 'movies')
 export default Movie
