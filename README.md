@@ -1,65 +1,19 @@
-# 🛍️ TP Final - Angular
+# 🎬 TP Final - API CRUD de Películas con Node.js, Express y MongoDB
 
 Repositorio correspondiente al **Trabajo Práctico Final** del curso de **Angular** en la **Diplomatura en Professional Full-Stack Developer** del Centro de e-Learning **UTN FRBA**.
 
 - 👨‍🎓 Alumno: **David Colliard Schneider**  
 - 📧 Contacto: [carloscolliard@gmail.com](mailto:carloscolliard@gmail.com)
+- 
 
----
+Este proyecto es una API REST desarrollada con **Node.js**, **Express** y **MongoDB** (a través de **Mongoose**), que permite gestionar un catálogo de películas.  
+Incluye operaciones CRUD completas y está preparado para integrarse con **MongoDB Atlas** o una instancia local.
 
 ## 🌐 Demo en línea
 
 Prueba la aplicación desplegada en Vercel:
 
-👉 **[https://utntp-final-angular.vercel.app/](https://utntp-final-angular.vercel.app/)**
-
----
-## 🧩 Funcionalidades principales
-
-- 🛍️ Ver listado de productos.
-- 🔍 Ver detalles de cada producto.
-- 💳 Simular compra de un producto.
-- 📬 Enviar mensaje a través del formulario de contacto.
-- 🚫 Página personalizada para rutas no encontradas (404).
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- 🧱 **Angular 20** – Framework frontend
-- 🎨 **Bootstrap 5** – Para estilos rápidos y responsivos
-- 🔀 **Angular Router** – Manejo de rutas y navegación
-- 📤 **Vercel** – Deploy y hosting
-
----
-## 🚀 ¿Cómo correr el proyecto localmente?
-
-1. **Clonar el repositorio**
-
-   ```bash
-   git clone https://github.com/tu-usuario/BikeStoreApp.git
-   ```
-2. **Instalar dependencias**
-
-   ```bash
-   npm install
-   ```
-
-3. **Ejecutar servidor**
-  
-   ```bash
-   npm run dev
-   ```
-
-4. **Acceder en navegador**
-
-     http://localhost:4200
-
-
-# 🎬 API CRUD de Películas con Node.js, Express y MongoDB
-
-Este proyecto es una API REST desarrollada con **Node.js**, **Express** y **MongoDB** (a través de **Mongoose**), que permite gestionar un catálogo de películas.  
-Incluye operaciones CRUD completas y está preparado para integrarse con **MongoDB Atlas** o una instancia local.
+👉 **[https:///](https:///)**
 
 ---
 
@@ -192,10 +146,3 @@ DELETE /api/movies/:id
 
 - La colección utilizada es **`movies`** en la base definida por `MONGO_URI`.
 - Para entornos de desarrollo, puedes usar [MongoDB Compass](https://www.mongodb.com/products/compass) para visualizar la base de datos.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT.  
-Puedes usarlo libremente para fines educativos o comerciales.
