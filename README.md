@@ -1,6 +1,6 @@
 # 🎬 TP Final - API CRUD de Películas con Node.js, Express y MongoDB
 
-Repositorio correspondiente al **Trabajo Práctico Final** del curso de **Node.jsr** en la **Diplomatura en Professional Full-Stack Developer** del Centro de e-Learning **UTN FRBA**.
+Repositorio correspondiente al **Trabajo Práctico Final** del curso de **Node.js** en la **Diplomatura en Professional Full-Stack Developer** del Centro de e-Learning **UTN FRBA**.
 
 - 👨‍🎓 Alumno: **David Colliard Schneider**  
 - 📧 Contacto: [carloscolliard@gmail.com](mailto:carloscolliard@gmail.com)
