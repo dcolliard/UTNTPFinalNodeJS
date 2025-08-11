@@ -1,4 +1,6 @@
+// routes/movie.route.js
 import express from 'express'
+import mongoose from 'mongoose'
 import {
   createMovie,
   listMovies,
@@ -6,40 +8,30 @@ import {
   updateMovie,
   deleteMovie
 } from '../controllers/movie.controller.js'
+import Movie from '../models/MovieModel.js'
 
-/* Manejando la ruta de películas: todas las consultas relacionadas con movies se manejan aquí */
-
-// Se crea un enrutador
 const movie_router = express.Router()
 
-// LISTAR TODAS
-movie_router.get(
-  '/',
-  (request, response, next) => listMovies(request, response, next)
-)
+// DEBUG primero, para que no lo capture :id
+movie_router.get('/debug', async (req, res) => {
+  const db = mongoose.connection
+  const info = {
+    connected: db.readyState === 1,
+    host: db.host,
+    dbName: db.name,
+    collection: Movie.collection.name,
+    count: await Movie.estimatedDocumentCount()
+  }
+  res.json(info)
+})
 
-// CREAR
-movie_router.post(
-  '/',
-  (request, response, next) => createMovie(request, response, next)
-)
+// CRUD
+movie_router.get('/', listMovies)
+movie_router.post('/', createMovie)
 
-// OBTENER POR ID
-movie_router.get(
-  '/:id',
-  (request, response, next) => getMovie(request, response, next)
-)
-
-// ACTUALIZAR POR ID
-movie_router.put(
-  '/:id',
-  (request, response, next) => updateMovie(request, response, next)
-)
-
-// ELIMINAR POR ID
-movie_router.delete(
-  '/:id',
-  (request, response, next) => deleteMovie(request, response, next)
-)
+// A PARTIR DE ACÁ las rutas con :id
+movie_router.get('/:id', getMovie)
+movie_router.put('/:id', updateMovie)
+movie_router.delete('/:id', deleteMovie)
 
 export default movie_router
