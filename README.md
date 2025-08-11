@@ -13,7 +13,7 @@ Incluye operaciones CRUD completas y está preparado para integrarse con **Mongo
 
 Prueba la aplicación desplegada en Vercel:
 
-👉 **[https://https://utntp-final-node-js.vercel.app//](https://https://utntp-final-node-js.vercel.app//)**
+👉 **[https://utntp-final-node-js.vercel.app//](https://utntp-final-node-js.vercel.app//)**
 
 ---
 
