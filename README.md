@@ -4,7 +4,6 @@ Repositorio correspondiente al **Trabajo Práctico Final** del curso de **Node.j
 
 - 👨‍🎓 Alumno: **David Colliard Schneider**  
 - 📧 Contacto: [carloscolliard@gmail.com](mailto:carloscolliard@gmail.com)
-- 
 
 Este proyecto es una API REST desarrollada con **Node.js**, **Express** y **MongoDB** (a través de **Mongoose**), que permite gestionar un catálogo de películas.  
 Incluye operaciones CRUD completas y está preparado para integrarse con **MongoDB Atlas** o una instancia local.
